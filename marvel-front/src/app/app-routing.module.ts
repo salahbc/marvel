@@ -6,8 +6,8 @@ import { ShowHeroComponent } from './show-hero/show-hero.component';
 
 import { ShowTeamComponent } from './show-team/show-team.component';
 
+import { ComicLinkHeroComponent } from './comic-link-hero/comic-link-hero.component';
 
-import { FindCharacterComponent } from './find-character/find-character.component';
 
 import { AddCharacterComponent } from './add-character/add-character.component';
 
@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'showTeam', component: ShowTeamComponent },
 
 
-  { path: 'findCharacter', component: FindCharacterComponent },
+  { path: 'comicLinkHero', component: ComicLinkHeroComponent },
   
   { path: 'addCharacter', component: AddCharacterComponent },
 

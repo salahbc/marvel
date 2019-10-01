@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShowHeroComponent } from './show-hero/show-hero.component';
 import { ShowTeamComponent } from './show-team/show-team.component';
-import { FindCharacterComponent } from './find-character/find-character.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -31,6 +30,7 @@ import {  MomentDateAdapter } from '@angular/material-moment-adapter';
 import { AngularMaterialModule } from "./shared/angular-material.module";
 import { AddCharacterComponent } from './add-character/add-character.component';
 import { AddSuperTeamComponent } from './add-super-team/add-super-team.component';
+import { ComicLinkHeroComponent } from './comic-link-hero/comic-link-hero.component';
 
 
 //create our cost var with the information about the format that we want
@@ -57,9 +57,9 @@ export const MY_FORMATS = {
     AppComponent,
     ShowHeroComponent,
     ShowTeamComponent,
-    FindCharacterComponent,
     AddCharacterComponent,
-    AddSuperTeamComponent
+    AddSuperTeamComponent,
+    ComicLinkHeroComponent
   ],
   imports: [
     BrowserModule,

@@ -102,4 +102,13 @@ export class ShowHeroComponent   implements OnInit, AfterContentChecked  {
     this.dialog.open(AddSuperTeamComponent,dialogConfig);
  }
 
+
+
+ onShowLink(row)
+ {
+     window.localStorage.setItem("idHero", row.id);
+     this.router.navigate(['/comicLinkHero']);
+
+ }
+
 }
