@@ -19,3 +19,12 @@ INSERT INTO hero (id, name, vignette, description,teamId) VALUES (6, 'Captain Am
 
 
 
+INSERT INTO comic (comicId, name,description) VALUES (1, 'Spider-Man',"Peter Parker, alias Spider-Man, est un super-héros évoluant dans l'univers Marvel de la maison d'édition Marvel Comics. Créé par le scénariste Stan Lee et le dessinateur Steve Ditko, le personnage de fiction apparaît pour la première fois dans le comic book Amazing Fantasy #15 en 1962");
+
+INSERT INTO comic (comicId, name,description) VALUES (2, 'Iron-Man',"Anthony « Tony » Stark, alias Iron Man est un super-héros évoluant dans l'univers Marvel de la maison d'édition Marvel Comics.");
+
+
+INSERT INTO comic (comicId, name,description) VALUES (3, 'Thor',"Au royaume d'Asgard, Thor est un guerrier aussi puissant qu'arrogant.");
+
+INSERT INTO comic (comicId, name,description) VALUES (4, 'Avengers',"Le Titan Thanos, ayant réussi à s'approprier les six Pierres d'Infinité et à les réunir sur le Gantelet doré");
+

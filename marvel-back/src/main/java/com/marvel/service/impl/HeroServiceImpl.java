@@ -5,7 +5,6 @@ import com.marvel.model.Hero;
 import com.marvel.model.HeroDto;
 import com.marvel.service.HeroService;
 
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

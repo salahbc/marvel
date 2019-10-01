@@ -42,7 +42,7 @@ public class HeroController {
     @DeleteMapping("/{id}")
     public ApiResponse<Void> delete(@PathVariable int id) {
         HeroService.delete(id);
-        return new ApiResponse<>(HttpStatus.OK.value(), "Hero fetched successfully.", null);
+        return new ApiResponse<>(HttpStatus.OK.value(), "Hero deleted successfully.", null);
     }
 
 
