@@ -11,6 +11,9 @@ import { FindCharacterComponent } from './find-character/find-character.componen
 
 import { AddCharacterComponent } from './add-character/add-character.component';
 
+
+import { AddSuperTeamComponent } from './add-super-team/add-super-team.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'accueil', pathMatch: 'full' },
   
@@ -24,6 +27,11 @@ const routes: Routes = [
   { path: 'findCharacter', component: FindCharacterComponent },
   
   { path: 'addCharacter', component: AddCharacterComponent },
+
+  { path: 'addSuperTeam', component: AddSuperTeamComponent },
+
+
+  
   
   
 
