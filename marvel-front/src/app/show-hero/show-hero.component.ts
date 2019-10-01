@@ -1,7 +1,3 @@
-
-
-
-
 import { Component, OnInit ,ViewChild,ChangeDetectorRef,AfterContentChecked} from '@angular/core';
 import {Router} from "@angular/router";
 import {ApiService} from "../core/api.service";
