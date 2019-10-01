@@ -90,7 +90,10 @@ export class ShowHeroComponent   implements OnInit, AfterContentChecked  {
   
   onEdit(row){
     this.selected = row;
-    window.localStorage.setItem("row", row);
+    console.log(this.selected.team.name);
+    window.localStorage.setItem("nameTeam", this.selected.team.name);
+    window.localStorage.setItem("idHero", this.selected.id);
+
     const dialogConfig = new MatDialogConfig();
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
