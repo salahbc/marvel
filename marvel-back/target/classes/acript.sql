@@ -28,3 +28,27 @@ INSERT INTO comic (comicId, name,description) VALUES (3, 'Thor',"Au royaume d'As
 
 INSERT INTO comic (comicId, name,description) VALUES (4, 'Avengers',"Le Titan Thanos, ayant réussi à s'approprier les six Pierres d'Infinité et à les réunir sur le Gantelet doré");
 
+
+
+INSERT INTO comic (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (1, 1,'2019-10-01',1);
+
+INSERT INTO comic (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (2, 1,'2019-10-01',2);
+
+INSERT INTO comic (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (3, 2,'2019-10-01',3);
+
+INSERT INTO comic (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (4, 2,'2019-10-01',4);
+
+INSERT INTO comic (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (5, 3,'2019-10-01',5);
+
+
+INSERT INTO comic (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (6, 3,'2019-10-01',6);
+
+
+
+ 
+
+ 
+
+ 
+
+ 
