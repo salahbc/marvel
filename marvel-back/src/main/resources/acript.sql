@@ -1,0 +1,6 @@
+INSERT INTO hero (id, name, vignette, description) VALUES (1, 'Wolverine','wolv.png',"Logan, alias Wolverine, est un super-héros évoluant dans l'univers Marvel de la maison d'édition Marvel Comics.");
+INSERT INTO hero (id, name, vignette, description) VALUES (2, 'Spider-Man','spider.png', "Spider man, est un super-héros évoluant dans l'univers Marvel de la maison d'édition Marvel Comics.");
+INSERT INTO hero (id, name, vignette, description) VALUES (3, 'Thor','thor.png', "Spider man, est un super-héros évoluant dans l'univers Marvel de la maison d'édition Marvel Comics.");
+INSERT INTO hero (id, name, vignette, description) VALUES (4, 'Iron Man','iron.png', "Spider man, est un super-héros évoluant dans l'univers Marvel de la maison d'édition Marvel Comics.");
+INSERT INTO hero (id, name, vignette, description) VALUES (5, 'Hulk','hulk.png', "Spider man, est un super-héros évoluant dans l'univers Marvel de la maison d'édition Marvel Comics.");
+INSERT INTO hero (id, name, vignette, description) VALUES (6, 'Captain America','captain.png',"Spider man, est un super-héros évoluant dans l'univers Marvel de la maison d'édition Marvel Comics.");

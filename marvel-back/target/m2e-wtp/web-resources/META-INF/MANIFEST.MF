@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: marvel-back
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: s.benchaalia
+Implementation-Vendor-Id: com.marvel
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/marvel-back
+Created-By: Maven Integration for Eclipse
+

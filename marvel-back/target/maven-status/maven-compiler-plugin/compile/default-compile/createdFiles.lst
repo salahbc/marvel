@@ -1,0 +1,10 @@
+com\marvel\model\HeroDto.class
+com\marvel\controller\HeroController.class
+com\marvel\service\HeroService.class
+com\marvel\config\ExceptionAdvice.class
+com\marvel\model\Hero.class
+com\marvel\Application.class
+com\marvel\dao\HeroDao.class
+com\marvel\service\impl\HeroServiceImpl.class
+com\marvel\model\ApiResponse.class
+com\marvel\config\CORSFilter.class
