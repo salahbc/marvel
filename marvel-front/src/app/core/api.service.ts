@@ -26,6 +26,11 @@ export class ApiService {
     return this.http.get<ApiResponse>(this.baseUrl+'teams');
    }
 
+
+
+   updateHero(saveHeroLoad) : Observable<ApiResponse> {
+    return this.http.put<ApiResponse>(this.baseUrl+'heroes/'+saveHeroLoad.id, saveHeroLoad);
+   }
   
   
 

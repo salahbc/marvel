@@ -45,13 +45,14 @@ public class HeroServiceImpl implements  HeroService {
 	}
 
     @Override
-    public HeroDto update(HeroDto userDto) {
-    	Hero user = findById(userDto.getId());
-        if(user != null) {
-            BeanUtils.copyProperties(userDto, user, "password");
-            heroDao.save(user);
+    public HeroDto update(HeroDto heroDto) {
+    	Hero hero = findById(heroDto.getId());
+        if(hero != null) {
+           // BeanUtils.copyProperties(heroDto, hero, "teamId");
+            hero.setTeamId(heroDto.getTeamId());
+            heroDao.save(hero);
         }
-        return userDto;
+        return heroDto;
     }
 
 
@@ -63,4 +64,6 @@ public class HeroServiceImpl implements  HeroService {
     	newHero.setDescription(hero.getDescription());
         return heroDao.save(newHero);
     }
+
+
 }

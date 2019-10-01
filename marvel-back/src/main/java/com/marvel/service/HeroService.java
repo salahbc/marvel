@@ -17,4 +17,5 @@ public interface HeroService {
     Hero findById(int id);
 
     HeroDto update(HeroDto heroDto);
+
 }

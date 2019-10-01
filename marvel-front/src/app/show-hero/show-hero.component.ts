@@ -92,6 +92,7 @@ export class ShowHeroComponent   implements OnInit, AfterContentChecked  {
     this.selected = row;
     console.log(this.selected.team.name);
     window.localStorage.setItem("nameTeam", this.selected.team.name);
+    window.localStorage.setItem("idTeam", this.selected.team.id);
     window.localStorage.setItem("idHero", this.selected.id);
 
     const dialogConfig = new MatDialogConfig();

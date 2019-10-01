@@ -2,6 +2,9 @@ package com.marvel.model;
 
 import javax.persistence.*;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 
 @Entity
 @Table(name = "hero")
@@ -17,11 +20,15 @@ public class Hero {
     @Column
     private String description;
     
-    @Column(precision=10, insertable = false, updatable = false)
+    @Column
     private Integer teamId;
     
-    @ManyToOne(optional=false)
-    @JoinColumn(name="teamId")
+    
+    
+    
+    @ManyToOne(fetch =FetchType.LAZY)
+    @JoinColumn(name="teamId", insertable = false, updatable = false)
+    @Fetch(FetchMode.JOIN)
     private Team team;
     
     
