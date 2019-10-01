@@ -12,6 +12,9 @@ import * as moment from 'moment';
 
 import { AddCharacterComponent } from '../add-character/add-character.component';
 
+import { AddSuperTeamComponent } from '../add-super-team/add-super-team.component';
+
+
 @Component({
   selector: 'app-show-hero',
   templateUrl: './show-hero.component.html',
@@ -81,5 +84,17 @@ export class ShowHeroComponent   implements OnInit, AfterContentChecked  {
      this.dialog.open(AddCharacterComponent,dialogConfig);
 
   }
+
+
+
+  
+  onEdit(row){
+   this.selected = row;
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    dialogConfig.width = "60%";
+    this.dialog.open(AddSuperTeamComponent,dialogConfig);
+ }
 
 }

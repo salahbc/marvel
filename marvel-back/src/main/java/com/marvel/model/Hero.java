@@ -17,11 +17,12 @@ public class Hero {
     @Column
     private String description;
     
+    @Column(precision=10, insertable = false, updatable = false)
+    private Integer teamId;
     
-    
-//    @ManyToOne(optional=false)
-//    @JoinColumn(name="team_id", nullable=false)
-//    private Team team;
+    @ManyToOne(optional=false)
+    @JoinColumn(name="teamId")
+    private Team team;
     
     
 	public int getId() {
@@ -50,20 +51,41 @@ public class Hero {
 	}
 	
 	
-	
+	public int getTeamId() {
+		return teamId;
+	}
+	public void setTeamId(int teamId) {
+		this.teamId = teamId;
+	}
 	
 	
 	public Hero() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Hero(int id, String name, String vignette, String description) {
+	public Team getTeam() {
+		return team;
+	}
+	public void setTeam(Team team) {
+		this.team = team;
+	}
+	
+	
+	
+	
+	public Hero(int id, String name, String vignette, String description, int teamId, Team team) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.vignette = vignette;
 		this.description = description;
+		this.teamId = teamId;
+		this.team = team;
 	}
+	
+	
+	
+
 
 
 	

@@ -51,10 +51,15 @@ export class AddCharacterComponent implements OnInit {
 
   onSubmit()
   {
-
-
-
+    this.service.saveHero();
+    this.notificationService.success('Le super hero est bien ajouté');
+    this.dialogRef.close();
   }
+
+
+
+
+
 
 
 }

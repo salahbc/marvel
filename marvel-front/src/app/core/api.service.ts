@@ -12,8 +12,8 @@ export class ApiService {
 
   baseUrl: string = 'http://localhost:8080/';
 
-   login(loginPayload) : Observable<ApiResponse> {
-   return this.http.post<ApiResponse>('https://localhost:8443' + '/api/auth/login', loginPayload);
+   saveHero(saveHeroLoad) : Observable<ApiResponse> {
+   return this.http.post<ApiResponse>(this.baseUrl+'heroes', saveHeroLoad);
   }
 
 

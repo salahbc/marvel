@@ -30,6 +30,7 @@ import {  MomentDateAdapter } from '@angular/material-moment-adapter';
 
 import { AngularMaterialModule } from "./shared/angular-material.module";
 import { AddCharacterComponent } from './add-character/add-character.component';
+import { AddSuperTeamComponent } from './add-super-team/add-super-team.component';
 
 
 //create our cost var with the information about the format that we want
@@ -57,7 +58,8 @@ export const MY_FORMATS = {
     ShowHeroComponent,
     ShowTeamComponent,
     FindCharacterComponent,
-    AddCharacterComponent
+    AddCharacterComponent,
+    AddSuperTeamComponent
   ],
   imports: [
     BrowserModule,

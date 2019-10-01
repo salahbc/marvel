@@ -5,7 +5,12 @@ public class HeroDto {
     private int id;
     private String name;
     private String vignette;
-    private String desciption;
+    private String description;
+    private int teamId;
+    
+    
+    
+    
 	public int getId() {
 		return id;
 	}
@@ -24,12 +29,22 @@ public class HeroDto {
 	public void setVignette(String vignette) {
 		this.vignette = vignette;
 	}
-	public String getDesciption() {
-		return desciption;
+	public String getDescription() {
+		return description;
 	}
-	public void setDesciption(String desciption) {
-		this.desciption = desciption;
+	public void setDescription(String description) {
+		this.description = description;
 	}
+	public int getTeamId() {
+		return teamId;
+	}
+	public void setTeamId(int teamId) {
+		this.teamId = teamId;
+	}
+	
+	
+	
+	
 
 
     
