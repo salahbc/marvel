@@ -1,125 +1,86 @@
 <mat-toolbar>
-        <span>Traitement d'une demande </span>
-         <span class="fill-remaining-space"></span>
+        <span>Ajouter un super hero </span>
+         <!-- <span class="fill-remaining-space"></span> -->
+         <div class="mat-right">
          <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1"><mat-icon>clear</mat-icon></button>
-       </mat-toolbar>
-       <form class="normal-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-         <mat-grid-list cols="2" rowHeight="500px">
-           <mat-grid-tile>
-             <div class="controles-container">
-               <mat-form-field>
+     </div>
+
+
+        </mat-toolbar>
+       <form [formGroup]="service.form" class="normal-form" (ngSubmit)="onSubmit()">
+        <mat-grid-list cols="2" rowHeight="200px">
+            <div class="controles-container">
+               <!-- <mat-form-field>
                  <input formControlName="idDemande"  matInput placeholder="Numéro de la demande">
                  <mat-error>This field is mandatory.</mat-error>
-               </mat-form-field>
+               </mat-form-field> -->
        
        
-               <label class="title">Coordonnées demandeur </label>
-               <mat-form-field>
-                 <input formControlName="nom" matInput placeholder="Nom">
-               </mat-form-field>
-       
-               <mat-form-field>
-                 <input formControlName="prenom" matInput placeholder="Prenom">
-               </mat-form-field>
-       
-               <mat-form-field>
-                   <input formControlName="gender" matInput placeholder="Sexe">
-                 </mat-form-field>
-       
-                   <mat-form-field>
-                       <input formControlName="cin" matInput placeholder="Numéro Cin">
-                     </mat-form-field>
-       
-                     <mat-form-field>
-                         <input formControlName="categorieDemandeur" matInput placeholder="Actuellement vous êtes">
-                       </mat-form-field>
-       
-       
-                       <mat-radio-group formControlName="manipDemande" (change)="onChange($event)">
-                         <mat-radio-button #changement value="1">Changement statut</mat-radio-button>  
-                         <mat-radio-button #reaffectation  value="2">Réaffectation</mat-radio-button>      
-                       </mat-radio-group>
-                       <div *ngIf="service.form.controls['manipDemande'].hasError('required')" class="error">
-                       </div> 
-                     
+               <!-- <label class="title">Coordonnées Super Hero </label> -->
+
+
+               <mat-grid-tile>
+                  <mat-form-field>
+                      <input formControlName="nom" matInput placeholder="Nom">
+                      <mat-error>Ce champ est obligatorie.</mat-error>
+                    </mat-form-field>
+               </mat-grid-tile>
+
+
+
+               <mat-grid-tile>
+                  <mat-form-field>
+                      <input formControlName="prenom" matInput placeholder="Prenom">
+                      <mat-error>Ce champ est obligatorie.</mat-error>
+                    </mat-form-field>
+
+               </mat-grid-tile>
+
+
+
+               <mat-grid-tile>
+
+
+                  <mat-form-field>
+                      <input formControlName="description" matInput placeholder="description">
+                      <mat-error>Ce champ est obligatorie.</mat-error>
+                    </mat-form-field>
+
+
+               </mat-grid-tile>
+
+
+
+
+               <mat-grid-tile>
+
+                  <mat-form-field>
+                      <mat-label>Teams</mat-label> 
+                        <mat-select placeholder="Team" formControlName="Team"  [(ngModel)]="Team" required>
+                               <mat-option>Team</mat-option>
+                                <mat-option *ngFor="let team of teams" value="{{team.id}}">{{team.name}}</mat-option>
+                            </mat-select>  
+                          </mat-form-field> 
+
+                          
+
+
+               </mat-grid-tile>
                
-                      <!-- <div *ngIf="reaffectation.checked">
-                      <mat-form-field>
-                   <mat-label>Agence</mat-label> 
-                     <mat-select placeholder="Agence" formControlName="agence"  [(ngModel)]="Agence" required>
-                            <mat-option>Agence</mat-option>
-                             <mat-option *ngFor="let agence of agences" value="{{agence.idAgence}}">{{agence.libelleAgence}}</mat-option>
-                         </mat-select>  
-                       </mat-form-field> 
-                     </div>   -->
-               
-               
-               
-               
-                  
-               
-       
+
+      
              </div>
-           </mat-grid-tile>
-       
-           <mat-grid-tile class="mat-right">
-             <div class="controles-container">
-       
-               <mat-form-field>
-                 <input formControlName="dateDemande" matInput placeholder="Date de la Demande">
-                 <mat-error>Invalid email address.</mat-error>
-               </mat-form-field>
-       
-               <label class="title">Demande de crédit </label>
-       
-       
-               <mat-form-field>
-                 <input formControlName="projetExistant" matInput placeholder="Vous avez un projet ?">
-               </mat-form-field>
-       
-       
-               <mat-form-field>
-                 <input formControlName="descriptionProjet" matInput placeholder="Description de votre projet">
-               </mat-form-field>
-       
-       
-               <mat-form-field>
-                 <input formControlName="besoinDemandeur" matInput placeholder="Besoins">
-               </mat-form-field>
-       
-               <mat-form-field>
-                 <input formControlName="montantSouhaiter" matInput placeholder="Montant souhaité">
-               </mat-form-field>
-       
-       
-               <mat-form-field>
-                 <input formControlName="estimationRemboursement" matInput placeholder="Estimation de vos capacité mensuelle de remboursement">
-               </mat-form-field>
-       
-               
-     
-       
-       
-               
-         
-       
-               <div class="button-row">
-                 <button mat-raised-button color="primary" type="submit" >Submit</button>
-                 <!-- <button mat-raised-button color="warn" (click)="onClear()">Clear</button> -->
-               </div>
-       
-       
-       
-       
-             
-             </div>
+  
           
-           </mat-grid-tile>
-       
-       
-       
+
          </mat-grid-list>
        
        
+
+         <div class="mat-right">
+            <button mat-raised-button color="primary" type="submit" >Submit</button>
+      
+          </div>
+
        </form>
        

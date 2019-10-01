@@ -10,6 +10,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
+  baseUrl: string = 'http://localhost:8080/';
 
    login(loginPayload) : Observable<ApiResponse> {
    return this.http.post<ApiResponse>('https://localhost:8443' + '/api/auth/login', loginPayload);
@@ -17,13 +18,14 @@ export class ApiService {
 
 
   getHeroes() : Observable<ApiResponse> {
-    return this.http.get<ApiResponse>('http://localhost:8080/heroes');
+    return this.http.get<ApiResponse>(this.baseUrl+'heroes');
    }
 
 
-   getMailForSend(value) : Observable<ApiResponse> {
-    return this.http.get<ApiResponse>('https://localhost:8443/mail/getMailForAutocomplete/'+ value);
+   getTeams() : Observable<ApiResponse> {
+    return this.http.get<ApiResponse>(this.baseUrl+'teams');
    }
+
   
   
 

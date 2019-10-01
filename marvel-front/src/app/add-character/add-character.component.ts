@@ -8,7 +8,9 @@ import { MatDialogRef, MatRadioChange, MatRadioButton } from '@angular/material'
 import {ApiService} from "../core/api.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
-//import { NotificationService } from '../shared/notification.service';
+import { InformationService } from '../shared/information.service';
+import { NotificationService } from '../shared/notification.service';
+
 
 
 
@@ -19,14 +21,40 @@ import {Router} from "@angular/router";
 })
 export class AddCharacterComponent implements OnInit {
 
-  constructor(public dialogRef: MatDialogRef<AddCharacterComponent>,private apiService: ApiService,private formBuilder: FormBuilder, private router: Router
-   
-   // ,private notificationService: NotificationService
+  constructor(private service: InformationService,public dialogRef: MatDialogRef<AddCharacterComponent>,private apiService: ApiService,private formBuilder: FormBuilder, private router: Router,private notificationService: NotificationService
     ) {
     
    }
+    
+   teams: any;
 
   ngOnInit() {
+
+    this.apiService.getTeams()
+    .subscribe( data => {
+     
+      console.log(data.result);
+      this.teams=data.result
+    
+    });
+
   }
+
+
+
+  onClose() {
+    this.service.form.reset();
+    this.service.initializeFormGroup();
+    this.dialogRef.close();
+  } 
+
+
+  onSubmit()
+  {
+
+
+
+  }
+
 
 }

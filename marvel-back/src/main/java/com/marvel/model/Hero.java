@@ -1,8 +1,7 @@
 package com.marvel.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.*;
+
 
 @Entity
 @Table(name = "hero")
@@ -17,6 +16,14 @@ public class Hero {
     private String vignette;
     @Column
     private String description;
+    
+    
+    
+//    @ManyToOne(optional=false)
+//    @JoinColumn(name="team_id", nullable=false)
+//    private Team team;
+    
+    
 	public int getId() {
 		return id;
 	}

@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,11 +25,6 @@ public class HeroServiceImpl implements  HeroService {
 	public List<Hero> findAll() {
 		List<Hero> list = new ArrayList<>();
 		list = heroDao.findAll();
-//		for(int i=0;i<list.size();i++)
-//		{
-//			
-//		}
-
 		return list;
 	}
 
