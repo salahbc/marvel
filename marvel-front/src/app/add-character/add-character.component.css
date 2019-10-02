@@ -16,3 +16,14 @@
     margin-left: 126px;
     margin-top: 20px;
 }
+
+
+  
+.bgimg {
+    display: block;
+    background: url(/../assets/image/spider.png) center;
+    background-repeat: no-repeat, repeat;
+    background-size: 159px 333px;
+ 
+  }
+ 
