@@ -34,7 +34,7 @@ INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VAL
 
 INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (2, 1,'2019-10-01',2);
 
-INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (3, 2,'2019-10-01',3);
+INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (3, 2,'2019-10-01',1);
 
 INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (4, 2,'2019-10-01',4);
 
