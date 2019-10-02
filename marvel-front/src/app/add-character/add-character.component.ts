@@ -1,12 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
-
-
-import { MatDialogRef, MatRadioChange, MatRadioButton } from '@angular/material';
-
-
+import { MatDialogRef } from '@angular/material';
 import {ApiService} from "../core/api.service";
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
 import { InformationService } from '../shared/information.service';
 import { NotificationService } from '../shared/notification.service';
@@ -72,7 +67,6 @@ export class AddCharacterComponent implements OnInit {
 
 
     this.apiService.postImage(this.fileToUpload).subscribe(data => {
-      // do something, if upload success
       }, error => {
         console.log(error);
       });
@@ -81,11 +75,5 @@ export class AddCharacterComponent implements OnInit {
     this.notificationService.success('Le super hero est bien ajouté');
     this.dialogRef.close();
   }
-
-
-
-
-
-
 
 }

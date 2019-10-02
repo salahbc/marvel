@@ -7,11 +7,6 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 import com.marvel.fileUpload.FileStorageProperties;
 
-
-
-
-
-
 @EnableConfigurationProperties({
 	FileStorageProperties.class
 })

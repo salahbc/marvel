@@ -1,0 +1,90 @@
+
+      <div class="bgimg">
+        <div class="testclass"> 
+            <mat-list color="primary">
+              <mat-list-item> 
+             
+              </mat-list-item>
+              <mat-list-item>
+                  
+              </mat-list-item>
+            </mat-list>
+          </div>
+        </div>
+    
+
+        <form [formGroup]="rechercheForm" (ngSubmit)="onSubmit()" >
+                <div class="container containerSearch">         
+                         <mat-grid-list cols="3" rowHeight="300px">
+                          <mat-grid-tile>
+                              <div class="controles-container">
+
+            
+                                    <mat-form-field>
+                                        <input matInput [matDatepicker]="dateDeb" formControlName="dateDeb" placeholder="Date début" readonly>
+                                        <mat-datepicker-toggle matSuffix [for]="dateDeb"></mat-datepicker-toggle>
+                                        <mat-datepicker #dateDeb disabled="false"></mat-datepicker>
+                                        <mat-error>Ce champ est obligatorie.</mat-error>
+                                      </mat-form-field>             
+          
+                                </div>
+                          </mat-grid-tile>
+                   
+               
+                     <mat-grid-tile>
+                        <div class="controles-container">
+                         <mat-form-field>
+                                <input matInput [matDatepicker]="dateFin" formControlName="dateFin" placeholder="Date fin" readonly>
+                                <mat-datepicker-toggle matSuffix [for]="dateFin"></mat-datepicker-toggle>
+                                <mat-datepicker #dateFin disabled="false"></mat-datepicker>
+                                <mat-error>Ce champ est obligatorie.</mat-error>
+                              </mat-form-field>
+            
+            </div>
+            </mat-grid-tile>
+  
+            <mat-grid-tile>
+                <div class="controles-container">
+            
+            
+                    <button mat-button mat-raised-button type="submit" class="searchIcon">
+                        <mat-icon class="searchIcon">search</mat-icon>
+                        Filtrer
+                        </button>
+            
+                </div>
+            </mat-grid-tile>    
+            </mat-grid-list>
+                </div>     
+
+                <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="comicLinkedHero">
+  
+      <ng-container matColumnDef="nom">
+        <th mat-header-cell *matHeaderCellDef> Nom Super Hero </th>
+        <td mat-cell *matCellDef="let element"> {{element.nameHero}} </td>
+      </ng-container>
+  
+
+      <ng-container matColumnDef="nbr">
+        <th mat-header-cell *matHeaderCellDef> Nombre Comics </th>
+        <td mat-cell *matCellDef="let element"> {{element.nbr}} </td>
+      </ng-container>
+  
+     
+  
+
+      <ng-container matColumnDef="actions">
+        <mat-header-cell *matHeaderCellDef></mat-header-cell>
+        <mat-cell *matCellDef="let row">
+
+        </mat-cell>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+
+    <mat-paginator [pageSizeOptions]="[20, 25, 40, 100]" [pageSize]="20" showFirstLastButtons></mat-paginator>
+</div>           </form>

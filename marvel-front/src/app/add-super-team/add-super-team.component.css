@@ -1,0 +1,28 @@
+.title
+{
+    color: #e2126e;
+}
+
+.mat-right
+{
+    float: right;
+    margin: auto;
+    margin-right: 0px;
+}
+
+
+.bgimg {
+    display: block;
+    background: url(/../assets/image/hulk.png) right bottom;
+    background-repeat: no-repeat, repeat;
+    background-size: 157px 205px;
+ 
+  }
+
+
+  .mat-grid-tile {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    margin-left: -35px;
+}

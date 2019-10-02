@@ -44,7 +44,7 @@ export class ShowHeroComponent   implements OnInit, AfterContentChecked  {
 
   ngOnInit() {
 
-
+    this.changeDetectorRefs.detectChanges();
 
     this.apiService.getHeroes()
     .subscribe( data => {

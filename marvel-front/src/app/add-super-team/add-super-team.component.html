@@ -1,0 +1,49 @@
+ <div class="bgimg">
+<mat-toolbar>
+        <span>Ajouter un hero à un super team </span>
+         <div class="mat-right">
+         <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1"><mat-icon>clear</mat-icon></button>
+     </div>
+
+
+ 
+        </mat-toolbar>
+       <form [formGroup]="service.form" class="normal-form" (ngSubmit)="onSubmit()">
+      
+        <mat-grid-list cols="2" rowHeight="200px">
+          
+            <div class="controles-container">
+    
+                <mat-grid-tile>
+
+                  
+                    <label class="title"> Ce hero il fait partie de : {{nameTeam}} </label>
+                  
+                  
+
+                  </mat-grid-tile>
+
+               <mat-grid-tile>
+                
+                  <mat-form-field id="teams">
+                      <mat-label>Teams</mat-label> 
+                        <mat-select placeholder="Team" formControlName="Team"  [(ngModel)]="Team" required>
+                               <mat-option>Team</mat-option>
+                                <mat-option *ngFor="let team of teams" value="{{team.teamId}}">{{team.name}}</mat-option>
+                            </mat-select>  
+                            <mat-error>Ce champ est obligatorie.</mat-error>
+                          </mat-form-field> 
+
+               </mat-grid-tile>
+               
+              </div>
+         </mat-grid-list>
+       
+
+         <div class="mat-right">
+            <button mat-raised-button color="primary" type="submit" >Submit</button>
+      
+          </div>
+
+       </form>
+      </div>

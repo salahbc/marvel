@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.marvel.fileUpload.FileStorageProperties",
+      "name": "file",
+      "type": "com.marvel.fileUpload.FileStorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.marvel.fileUpload.FileStorageProperties",
+      "name": "file.upload-dir",
+      "type": "java.lang.String"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+  }
+
+
+  
+  .bgimg {
+    display:block;
+    background: url(/../assets/image/marvel2.png) , url(/../assets/image/thanos.png) right #0c0c0d;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 800px 313px;
+    opacity: 0.84;
+    filter: alpha(opacity=50);
+  }
+
+  .mat-list-base {
+    padding-top: 165px;
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+}
