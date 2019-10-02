@@ -41,7 +41,12 @@ export class ApiService {
 
    
   
+   postImage(fileToUpload: File) : Observable<ApiResponse> {
+    const formData: FormData = new FormData();
+    formData.append('file', fileToUpload, fileToUpload.name);
+       return this.http.post<ApiResponse>(this.baseUrl+'uploadFile', formData);
 
+   }
 
 
 }

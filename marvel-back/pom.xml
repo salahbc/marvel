@@ -37,6 +37,18 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        
+        
+        <!-- https://mvnrepository.com/artifact/org.springframework.batch/spring-batch-core -->
+<dependency>
+    <groupId>org.springframework.batch</groupId>
+    <artifactId>spring-batch-core</artifactId>
+    <version>4.1.2.RELEASE</version>
+</dependency>
+        
+        
+        
+        
     </dependencies>
 
     <properties>

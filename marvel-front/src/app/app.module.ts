@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShowHeroComponent } from './show-hero/show-hero.component';
-import { ShowTeamComponent } from './show-team/show-team.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -33,6 +32,10 @@ import { AddSuperTeamComponent } from './add-super-team/add-super-team.component
 import { ComicLinkHeroComponent } from './comic-link-hero/comic-link-hero.component';
 
 
+import { MatFileUploadModule } from 'angular-material-fileupload';
+
+
+
 //create our cost var with the information about the format that we want
 export const MY_FORMATS = {
   parse: {
@@ -56,7 +59,6 @@ export const MY_FORMATS = {
   declarations: [
     AppComponent,
     ShowHeroComponent,
-    ShowTeamComponent,
     AddCharacterComponent,
     AddSuperTeamComponent,
     ComicLinkHeroComponent
@@ -73,7 +75,8 @@ export const MY_FORMATS = {
     MatPaginatorModule,
     FormsModule,
     MatIconModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    MatFileUploadModule
   ],
   providers: [ApiService, {provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptor,

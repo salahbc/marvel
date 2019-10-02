@@ -27,6 +27,10 @@ export class AddCharacterComponent implements OnInit {
    }
     
    teams: any;
+   fileToUpload: File = null;
+
+
+
 
   ngOnInit() {
 
@@ -39,6 +43,16 @@ export class AddCharacterComponent implements OnInit {
     });
 
   }
+
+
+  handleFileInput(files: FileList) {
+    console.log(this.fileToUpload)
+    this.fileToUpload = files.item(0);
+}
+
+
+
+
 
 
 
@@ -57,7 +71,13 @@ export class AddCharacterComponent implements OnInit {
     }
 
 
-    this.service.saveHero();
+    this.apiService.postImage(this.fileToUpload).subscribe(data => {
+      // do something, if upload success
+      }, error => {
+        console.log(error);
+      });
+
+    this.service.saveHero(this.fileToUpload.name);
     this.notificationService.success('Le super hero est bien ajouté');
     this.dialogRef.close();
   }

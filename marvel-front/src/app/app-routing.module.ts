@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
+
 import { ShowHeroComponent } from './show-hero/show-hero.component';
 
-import { ShowTeamComponent } from './show-team/show-team.component';
 
 import { ComicLinkHeroComponent } from './comic-link-hero/comic-link-hero.component';
 
@@ -20,9 +19,6 @@ const routes: Routes = [
   
   { path: 'accueil', component: ShowHeroComponent },
   
-  
-  { path: 'showTeam', component: ShowTeamComponent },
-
 
   { path: 'comicLinkHero', component: ComicLinkHeroComponent },
   

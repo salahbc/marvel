@@ -6,3 +6,16 @@ table {
     width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
   height: 80%;
   }
+
+
+  .bgimg {
+    display:block;
+    background: url('/../assets/image/marvel.png') no-repeat center firebrick;
+    background-size: 1000px 400px;
+  }
+
+  .mat-list-base {
+    padding-top: 165px;
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+}

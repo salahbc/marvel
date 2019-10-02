@@ -44,7 +44,6 @@ INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VAL
 INSERT INTO comicHeroLink (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (6, 3,'2019-10-01',6);
 
 
-http://localhost:8080/downloadFile/Outlook.png
 
 
  

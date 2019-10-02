@@ -1,23 +1,15 @@
 <mat-toolbar>
         <span>Ajouter un super hero </span>
-         <!-- <span class="fill-remaining-space"></span> -->
          <div class="mat-right">
          <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1"><mat-icon>clear</mat-icon></button>
-     </div>
+     </div> 
+
 
 
         </mat-toolbar>
        <form [formGroup]="service.form1" class="normal-form" (ngSubmit)="onSubmit()">
         <mat-grid-list cols="2" rowHeight="200px">
             <div class="controles-container">
-               <!-- <mat-form-field>
-                 <input formControlName="idDemande"  matInput placeholder="Numéro de la demande">
-                 <mat-error>This field is mandatory.</mat-error>
-               </mat-form-field> -->
-       
-       
-               <!-- <label class="title">Coordonnées Super Hero </label> -->
-
 
                <mat-grid-tile>
                   <mat-form-field>
@@ -25,17 +17,6 @@
                       <mat-error>Ce champ est obligatorie.</mat-error>
                     </mat-form-field>
                </mat-grid-tile>
-
-
-
-               <mat-grid-tile>
-                  <mat-form-field>
-                      <input formControlName="prenom" matInput placeholder="Prenom" required> 
-                      <mat-error>Ce champ est obligatorie.</mat-error>
-                    </mat-form-field>
-
-               </mat-grid-tile>
-
 
 
                <mat-grid-tile>
@@ -49,8 +30,17 @@
 
                </mat-grid-tile>
 
+               <mat-grid-tile>
+               <div class="form-group">
+                  <label id="file">Choose File: </label>
+                  <input type="file"
+                         id="file"
+                         (change)="handleFileInput($event.target.files)">
+                      
+                         
+              </div>
 
-
+            </mat-grid-tile>
 
                <!-- <mat-grid-tile>
 
