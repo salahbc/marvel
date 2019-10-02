@@ -7,7 +7,7 @@
 
 
         </mat-toolbar>
-       <form [formGroup]="service.form" class="normal-form" (ngSubmit)="onSubmit()">
+       <form [formGroup]="service.form1" class="normal-form" (ngSubmit)="onSubmit()">
         <mat-grid-list cols="2" rowHeight="200px">
             <div class="controles-container">
                <!-- <mat-form-field>
@@ -21,7 +21,7 @@
 
                <mat-grid-tile>
                   <mat-form-field>
-                      <input formControlName="nom" matInput placeholder="Nom">
+                      <input formControlName="nom" matInput placeholder="Nom" required>
                       <mat-error>Ce champ est obligatorie.</mat-error>
                     </mat-form-field>
                </mat-grid-tile>
@@ -30,7 +30,7 @@
 
                <mat-grid-tile>
                   <mat-form-field>
-                      <input formControlName="prenom" matInput placeholder="Prenom">
+                      <input formControlName="prenom" matInput placeholder="Prenom" required> 
                       <mat-error>Ce champ est obligatorie.</mat-error>
                     </mat-form-field>
 
@@ -42,7 +42,7 @@
 
 
                   <mat-form-field>
-                      <input formControlName="description" matInput placeholder="description">
+                      <input formControlName="description" matInput placeholder="description" required>
                       <mat-error>Ce champ est obligatorie.</mat-error>
                     </mat-form-field>
 

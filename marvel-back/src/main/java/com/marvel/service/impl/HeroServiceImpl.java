@@ -61,6 +61,7 @@ public class HeroServiceImpl implements  HeroService {
     	Hero newHero = new Hero();
     	newHero.setName(hero.getName());
     	newHero.setDescription(hero.getDescription());
+    	newHero.setTeamId(0);
         return heroDao.save(newHero);
     }
 

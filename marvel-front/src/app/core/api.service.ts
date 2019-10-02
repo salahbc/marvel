@@ -32,6 +32,14 @@ export class ApiService {
     return this.http.put<ApiResponse>(this.baseUrl+'heroes/'+saveHeroLoad.id, saveHeroLoad);
    }
   
+
+
+
+   getHeroLinkedComic(rechercheHeroLinkedComic) : Observable<ApiResponse> {
+    return this.http.post<ApiResponse>(this.baseUrl+'comicsHeroLink/getComicHeroLinkWithSearch', rechercheHeroLinkedComic);
+   }
+
+   
   
 
 

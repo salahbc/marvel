@@ -43,14 +43,20 @@ export class AddCharacterComponent implements OnInit {
 
 
   onClose() {
-    this.service.form.reset();
-    this.service.initializeFormGroup();
+    this.service.form1.reset();
+    this.service.initializeFormGroup1();
     this.dialogRef.close();
   } 
 
 
   onSubmit()
   {
+
+    if (this.service.form1.invalid) {
+      return;
+    }
+
+
     this.service.saveHero();
     this.notificationService.success('Le super hero est bien ajouté');
     this.dialogRef.close();
