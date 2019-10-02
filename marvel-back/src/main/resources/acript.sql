@@ -36,13 +36,15 @@ INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VAL
 
 INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (3, 2,'2019-10-01',1);
 
-INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (4, 2,'2019-10-01',4);
+INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (4, 2,'2019-10-01',3);
 
-INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (5, 3,'2019-10-01',5);
+INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (5, 2,'2019-10-01',3);
 
 
 INSERT INTO comicHeroLink (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (6, 3,'2019-10-01',6);
 
+
+http://localhost:8080/downloadFile/Outlook.png
 
 
  

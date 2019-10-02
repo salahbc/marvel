@@ -31,7 +31,7 @@ export class ShowHeroComponent   implements OnInit, AfterContentChecked  {
     selected: any;
     formattedDateDeb: string;
     formattedDateFin: string;
-  
+    Image: any;
     invalidUser: boolean = false
   constructor(private formBuilder: FormBuilder, private router: Router, private apiService: ApiService, private dialog: MatDialog,private changeDetectorRefs: ChangeDetectorRef) {
     }
@@ -43,6 +43,14 @@ export class ShowHeroComponent   implements OnInit, AfterContentChecked  {
 
 
   ngOnInit() {
+
+    
+    this.apiService.getImage()
+    .subscribe( data => {
+     this.Image=data.result;
+     console.log(this.Image);
+    
+    });
 
     this.apiService.getHeroes()
     .subscribe( data => {

@@ -1,5 +1,8 @@
   <div class="mat-elevation-z8">
       
+      <!-- <img mat-card-image src="Image" alt="Photo of a Shiba Inu"> -->
+
+      
 
         <button mat-raised-button style="float: right;padding: 2px" (click)="add()"><i class="material-icons" > 
                 add
@@ -17,7 +20,7 @@
       <!-- Name Column -->
       <ng-container matColumnDef="vignette">
         <th mat-header-cell *matHeaderCellDef> vignette </th>
-        <td mat-cell *matCellDef="let element"> {{element.vignette}} </td>
+        <td mat-cell *matCellDef="let element"> <img mat-card-image src="http://localhost:8080/downloadFile/Outlook.png" alt="Photo of a Shiba Inu"> </td>
       </ng-container>
   
      
