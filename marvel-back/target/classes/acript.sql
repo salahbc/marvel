@@ -19,7 +19,7 @@ INSERT INTO hero (id, name, vignette, description,teamId) VALUES (6, 'Captain Am
 
 
 
-INSERT INTO comic (comicId, name,description) VALUES (1, 'Spider-Man',"Peter Parker, alias Spider-Man, est un super-héros évoluant dans l'univers Marvel de la maison d'édition Marvel Comics. Créé par le scénariste Stan Lee et le dessinateur Steve Ditko, le personnage de fiction apparaît pour la première fois dans le comic book Amazing Fantasy #15 en 1962");
+INSERT INTO comic (comicId, name,description) VALUES (1, 'Spider-Man',"Peter Parker, alias Spider-Man, est un super-héros évoluant dans l'univers Marvel de la maison d'édition Marvel Comics.");
 
 INSERT INTO comic (comicId, name,description) VALUES (2, 'Iron-Man',"Anthony « Tony » Stark, alias Iron Man est un super-héros évoluant dans l'univers Marvel de la maison d'édition Marvel Comics.");
 
@@ -30,18 +30,18 @@ INSERT INTO comic (comicId, name,description) VALUES (4, 'Avengers',"Le Titan Th
 
 
 
-INSERT INTO comic (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (1, 1,'2019-10-01',1);
+INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (1, 1,'2019-10-01',1);
 
-INSERT INTO comic (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (2, 1,'2019-10-01',2);
+INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (2, 1,'2019-10-01',2);
 
-INSERT INTO comic (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (3, 2,'2019-10-01',3);
+INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (3, 2,'2019-10-01',3);
 
-INSERT INTO comic (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (4, 2,'2019-10-01',4);
+INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (4, 2,'2019-10-01',4);
 
-INSERT INTO comic (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (5, 3,'2019-10-01',5);
+INSERT INTO comicHeroLink (comicHeroLinkId , comicId,dateCroissement,idHero) VALUES (5, 3,'2019-10-01',5);
 
 
-INSERT INTO comic (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (6, 3,'2019-10-01',6);
+INSERT INTO comicHeroLink (comicHeroLinkId, comicId,dateCroissement,idHero) VALUES (6, 3,'2019-10-01',6);
 
 
 
