@@ -1,3 +1,8 @@
 table {
     width: 100%;
   }
+
+  #image  {
+    width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 80%;
+  }

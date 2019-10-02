@@ -43,9 +43,5 @@ export class ApiService {
   
 
 
-   getImage() : Observable<ApiResponse> {
-    return this.http.get<ApiResponse>("http://localhost:8080/downloadFile/Outlook.png");
-   }
-
 
 }

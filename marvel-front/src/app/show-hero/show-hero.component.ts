@@ -44,13 +44,7 @@ export class ShowHeroComponent   implements OnInit, AfterContentChecked  {
 
   ngOnInit() {
 
-    
-    this.apiService.getImage()
-    .subscribe( data => {
-     this.Image=data.result;
-     console.log(this.Image);
-    
-    });
+
 
     this.apiService.getHeroes()
     .subscribe( data => {

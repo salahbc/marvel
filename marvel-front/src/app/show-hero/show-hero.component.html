@@ -20,7 +20,7 @@
       <!-- Name Column -->
       <ng-container matColumnDef="vignette">
         <th mat-header-cell *matHeaderCellDef> vignette </th>
-        <td mat-cell *matCellDef="let element"> <img mat-card-image src="http://localhost:8080/downloadFile/Outlook.png" alt="Photo of a Shiba Inu"> </td>
+        <td mat-cell *matCellDef="let element"> <img id="image" mat-card-image src="http://localhost:8080/downloadFile/{{element.vignette}}" alt="Photo of a Shiba Inu"> </td>
       </ng-container>
   
      
