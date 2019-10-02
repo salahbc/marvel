@@ -57,7 +57,7 @@ export class AddCharacterComponent implements OnInit {
 
 
   onClose() {
-    this.service.form1.reset();
+    this.service.formOne.reset();
     this.service.initializeFormGroup1();
     this.dialogRef.close();
   } 
@@ -66,7 +66,7 @@ export class AddCharacterComponent implements OnInit {
   onSubmit()
   {
 
-    if (this.service.form1.invalid) {
+    if (this.service.formOne.invalid) {
       return;
     }
 

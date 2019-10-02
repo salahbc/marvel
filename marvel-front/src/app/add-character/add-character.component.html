@@ -10,7 +10,7 @@
 
 
         </mat-toolbar>
-       <form [formGroup]="service.form1" class="normal-form" (ngSubmit)="onSubmit()">
+       <form [formGroup]="service.formOne" class="normal-form" (ngSubmit)="onSubmit()">
         <mat-grid-list cols="2" rowHeight="200px">
             <div class="controles-container">
 
@@ -25,8 +25,11 @@
                <mat-grid-tile>
 
 
+
+              
+
                   <mat-form-field>
-                      <input formControlName="description" matInput placeholder="description" required>
+                      <textarea formControlName="description" matInput placeholder="description" required></textarea>
                       <mat-error>Ce champ est obligatorie.</mat-error>
                     </mat-form-field>
 
