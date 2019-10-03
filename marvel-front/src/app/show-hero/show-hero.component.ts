@@ -74,12 +74,7 @@ export class ShowHeroComponent   implements OnInit, AfterContentChecked  {
   add()
   {
   
-      const dialogConfig = new MatDialogConfig();
-     dialogConfig.disableClose = true;
-     dialogConfig.autoFocus = true;
-      dialogConfig.width = "60%";
- 
-     this.dialog.open(AddCharacterComponent,dialogConfig);
+    this.router.navigate(['/addCharacter']);
 
   }
 

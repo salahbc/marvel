@@ -16,9 +16,11 @@ import { NotificationService } from '../shared/notification.service';
 })
 export class AddCharacterComponent implements OnInit {
 
-  constructor(private service: InformationService,public dialogRef: MatDialogRef<AddCharacterComponent>,private apiService: ApiService,private formBuilder: FormBuilder, private router: Router,private notificationService: NotificationService
+  constructor(private service: InformationService,private apiService: ApiService,private formBuilder: FormBuilder, private router: Router,private notificationService: NotificationService
     ) {
     
+   //   ,public dialogRef: MatDialogRef<AddCharacterComponent>
+
    }
     
    teams: any;
@@ -54,7 +56,7 @@ export class AddCharacterComponent implements OnInit {
   onClose() {
     this.service.formOne.reset();
     this.service.initializeFormGroup1();
-    this.dialogRef.close();
+    // this.dialogRef.close();
   } 
 
 
@@ -73,7 +75,8 @@ export class AddCharacterComponent implements OnInit {
 
     this.service.saveHero(this.fileToUpload.name);
     this.notificationService.success('Le super hero est bien ajouté');
-    this.dialogRef.close();
+    // this.dialogRef.close();
+    this.router.navigate(['/accueil']);
   }
 
 }

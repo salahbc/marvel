@@ -4,12 +4,12 @@
 <mat-toolbar>
         <span>Ajouter un super hero </span>
          <div class="mat-right">
-         <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1"><mat-icon>clear</mat-icon></button>
+         <!-- <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1"><mat-icon>clear</mat-icon></button> -->
      </div> 
-
-
-
         </mat-toolbar>
+
+
+
        <form [formGroup]="service.formOne" class="normal-form" (ngSubmit)="onSubmit()">
         <mat-grid-list cols="2" rowHeight="200px">
             <div class="controles-container">
